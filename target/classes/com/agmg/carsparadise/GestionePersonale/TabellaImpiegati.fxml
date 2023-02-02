@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: white;" stylesheets="@../stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.agmg.carsparadise.GestionePersonale.Interface.TabellaImpiegati">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00768e" height="475.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="700.0" />
+        <TableView fx:id="tabellaImpiegati" fixedCellSize="20.0" layoutX="33.0" layoutY="163.0" prefHeight="400.0" prefWidth="639.0" style="-fx-border-color: #00768e; -fx-background-color: white;">
+            <columns>
+                <TableColumn fx:id="colMatricola" editable="false" prefWidth="64.27124786376953" text="Matricola" />
+                <TableColumn fx:id="colNome" editable="false" prefWidth="72.22354888916016" text="Nome" />
+                <TableColumn fx:id="colCognome" editable="false" prefWidth="75.03787231445312" text="Cognome" />
+                <TableColumn fx:id="colIndirizzo" editable="false" prefWidth="84.03318786621094" text="Indirizzo" />
+                <TableColumn fx:id="colTelefono" editable="false" prefWidth="73.42843627929688" text="Telefono" />
+                <TableColumn fx:id="colIban" editable="false" minWidth="0.0" prefWidth="50.590240478515625" text="Iban" />
+                <TableColumn fx:id="colEmail" editable="false" prefWidth="45.36151123046875" text="Email" />
+                <TableColumn fx:id="colPassword" editable="false" minWidth="0.0" prefWidth="70.50936889648438" text="Password" />
+                <TableColumn fx:id="colIsAdmin" editable="false" minWidth="0.0" prefWidth="35.74273681640625" text="Admin" />
+                <TableColumn fx:id="colRuolo" editable="false" prefWidth="67.25726318359375" text="Ruolo" />
+            </columns>
+        </TableView>
+        <Text fill="#00768e" layoutX="148.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visualizza Impiegati">
+            <font>
+                <Font size="49.0" />
+            </font></Text>
+        <Hyperlink layoutX="45.0" layoutY="45.0" onAction="#tornaAGestionePersonale">
+            <graphic>
+                <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/chevron-left-circle-solid-60%20(1).png" />
+                    </image>
+                </ImageView>
+            </graphic></Hyperlink>
+    </children>
+</AnchorPane>

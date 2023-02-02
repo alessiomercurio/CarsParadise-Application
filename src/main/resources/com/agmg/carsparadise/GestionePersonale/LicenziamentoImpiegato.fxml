@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: white;" stylesheets="@../stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.agmg.carsparadise.GestionePersonale.Interface.LicenziamentoImpiegato">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00768e" height="475.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="700.0" />
+        <Text fill="#00768e" layoutX="104.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Licenziamento impiegato">
+            <font>
+                <Font size="47.0" />
+            </font></Text>
+        <Hyperlink layoutX="45.0" layoutY="45.0" onAction="#tornaAGestionePersonale">
+            <graphic>
+                <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/chevron-left-circle-solid-60%20(1).png" />
+                    </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </ImageView>
+            </graphic></Hyperlink>
+      <TextField fx:id="textFieldMatricola" layoutX="235.0" layoutY="264.0" prefHeight="35.0" prefWidth="230.0" promptText="Inserisci matricola impiegato" />
+      <Text fill="WHITE" layoutX="235.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matricola">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="licenziamentoBtn" layoutX="275.0" layoutY="318.0" mnemonicParsing="false" onAction="#licenziaImpiegato" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #004957;" text="Licenzia" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+    </children>
+</AnchorPane>

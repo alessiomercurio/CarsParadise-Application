@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="paneGestionePersonale" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #ffffff;" stylesheets="@../stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.agmg.carsparadise.GestionePersonale.Interface.InterfacciaGestionePersonale">
+    <children>
+        <ImageView fitHeight="89.0" fitWidth="77.0" layoutX="299.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/user-regular-60.png" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00768e" height="601.0" layoutX="-2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="286.0" />
+        <ImageView fitHeight="150.0" fitWidth="161.0" layoutX="62.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/logo%20(1).png" />
+            </image>
+        </ImageView>
+        <Button layoutX="-2.0" layoutY="203.0" mnemonicParsing="false" onAction="#vaiAGestioneAccount" prefHeight="60.0" prefWidth="286.0" style="-fx-background-color: #00768e; -fx-background-radius: 0;" text="Gestione account" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+        <Button layoutX="-4.0" layoutY="265.0" mnemonicParsing="false" onAction="#vaiAGestioneCarriera" prefHeight="60.0" prefWidth="286.0" style="-fx-background-radius: 0;" text="Gestione carriera" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+        <Button layoutX="-3.0" layoutY="335.0" mnemonicParsing="false" onAction="#vaiARegRemoto" prefHeight="60.0" prefWidth="286.0" style="-fx-background-radius: 0;" text="Registrazione da remoto" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+        <Label fx:id="emailImpiegato" layoutX="375.0" layoutY="39.0" text="email@email.com">
+            <font>
+                <Font size="15.0" />
+            </font></Label>
+        <Label fx:id="ruoloImpiegato" layoutX="375.0" layoutY="66.0" text="ruolo">
+            <font>
+                <Font name="System Italic" size="15.0" />
+            </font></Label>
+        <Button fx:id="gestionePersonaleBtn" layoutX="-4.0" layoutY="405.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="286.0" style="-fx-background-radius: 0; -fx-background-color: #003F4B;" text="Gestione del Personale" textFill="WHITE" underline="true">
+            <cursor>
+                <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+        <Button layoutX="375.0" layoutY="116.0" mnemonicParsing="false" onAction="#mostraFormInserisciImpiegato" prefHeight="70.0" prefWidth="250.0" style="-fx-background-radius: 0; -fx-background-color: #00768e;" text="Registra nuovo &#10;impiegato" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <graphic>
+                <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/bx-user-plus.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+        <Button layoutX="375.0" layoutY="196.0" mnemonicParsing="false" onAction="#mostraFormLicenziaImpiegato" prefHeight="70.0" prefWidth="250.0" style="-fx-background-radius: 0; -fx-background-color: #00768e;" text="Licenzia impiegato" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <graphic>
+                <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/bx-user-minus.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+        <Button layoutX="375.0" layoutY="276.0" mnemonicParsing="false" onAction="#mostraImpiegati" prefHeight="70.0" prefWidth="250.0" style="-fx-background-radius: 0; -fx-background-color: #00768e;" text="Visualizza impiegati" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <graphic>
+                <ImageView fx:id="vi" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/user-detail-solid-60%20(1).png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+        <Text fill="WHITE" layoutX="8.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CarsParadise @ 2023">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Text>
+        <Button layoutX="375.0" layoutY="356.0" mnemonicParsing="false" onAction="#mostraFormModificaDatiImpiegati" prefHeight="70.0" prefWidth="250.0" style="-fx-background-radius: 0; -fx-background-color: #00768e;" text="Modifica dati impiegato" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <graphic>
+                <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/bx-id-card.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+      <Button layoutX="375.0" layoutY="436.0" mnemonicParsing="false" onAction="#mostraInserisciPeriodoIntensivo" prefHeight="70.0" prefWidth="250.0" style="-fx-background-radius: 0; -fx-background-color: #00768e;" text="Inserisci periodo intensivo&#10;" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/bx-calendar-plus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="375.0" layoutY="516.0" mnemonicParsing="false" onAction="#mostraEliminaPeriodoIntensivo" prefHeight="70.0" prefWidth="250.0" style="-fx-background-radius: 0; -fx-background-color: #00768e;" text="Elimina periodo intensivo&#10;" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/bx-calendar-minus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelAmministratore" layoutX="375.0" layoutY="93.0" text="Amministratore">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

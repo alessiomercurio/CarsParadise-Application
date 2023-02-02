@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="inserisciImpiegato" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" stylesheets="@../stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.agmg.carsparadise.GestionePersonale.Interface.FormPrecompilatoImpiegato">
+    <children>
+        <Rectangle arcWidth="5.0" fill="#00768e" height="475.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="700.0" />
+        <Text fill="#00768e" layoutX="127.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifica dati impiegato">
+            <font>
+                <Font size="45.0" />
+            </font></Text>
+        <TextField fx:id="nomeField" layoutX="90.0" layoutY="222.0" prefHeight="35.0" prefWidth="240.0" promptText="Nome" />
+        <TextField fx:id="indirizzoField" layoutX="90.0" layoutY="306.0" prefHeight="35.0" prefWidth="240.0" promptText="Indirizzo" />
+        <TextField fx:id="telField" layoutX="372.0" layoutY="307.0" prefHeight="35.0" prefWidth="240.0" promptText="Telefono" />
+        <Text fill="WHITE" layoutX="90.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+            <font>
+                <Font size="15.0" />
+            </font></Text>
+        <Text fill="WHITE" layoutX="90.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Indirizzo">
+            <font>
+                <Font size="15.0" />
+            </font></Text>
+        <Text fill="WHITE" layoutX="372.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono">
+            <font>
+                <Font size="15.0" />
+            </font></Text>
+        <Button layoutX="272.0" layoutY="537.0" mnemonicParsing="false" onAction="#modificaDatiImpiegato" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #003F4b;" text="Modifica" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <Hyperlink layoutX="45.0" layoutY="45.0" onAction="#tornaAGestionePersonale">
+            <graphic>
+                <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/chevron-left-circle-solid-60%20(1).png" />
+                    </image>
+                </ImageView>
+            </graphic></Hyperlink>
+        <TextField fx:id="cognomeField" layoutX="372.0" layoutY="222.0" prefHeight="35.0" prefWidth="240.0" promptText="Cognome" />
+        <Text fill="WHITE" layoutX="372.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cognome">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <TextField fx:id="ibanField" layoutX="372.0" layoutY="478.0" prefHeight="35.0" prefWidth="240.0" promptText="IBAN" />
+        <Text fill="WHITE" layoutX="372.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IBAN">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <TextField fx:id="emailField" layoutX="90.0" layoutY="391.0" prefHeight="35.0" prefWidth="240.0" promptText="Indirizzo" />
+        <Text fill="WHITE" layoutX="90.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <TextField fx:id="passwordField" layoutX="372.0" layoutY="391.0" prefHeight="35.0" prefWidth="240.0" promptText="Password" />
+        <Text fill="WHITE" layoutX="372.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <ChoiceBox fx:id="choiceBoxRuolo" layoutX="90.0" layoutY="483.0" prefWidth="240.0" />
+        <Text fill="WHITE" layoutX="96.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ruolo">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <CheckBox fx:id="checkBoxAmministratore" layoutX="142.0" layoutY="449.0" mnemonicParsing="false" text="Amministratore" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </CheckBox>
+      <TextField fx:id="matricolaField" layoutX="90.0" layoutY="148.0" onAction="#cercaImpiegato" prefHeight="35.0" prefWidth="240.0" promptText="Inserisci Matricola" />
+      <Button layoutX="399.0" layoutY="148.0" mnemonicParsing="false" onAction="#cercaImpiegato" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #003F4b;" text="Cerca" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+</AnchorPane>

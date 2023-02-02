@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="paneRegRemoto" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #ffffff;" stylesheets="@../stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.agmg.carsparadise.GestionePresenza.Interface.FormIngressoDaRemoto">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00768e" height="601.0" layoutX="-2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="286.0" />
+        <ImageView fitHeight="150.0" fitWidth="161.0" layoutX="62.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/logo%20(1).png" />
+            </image>
+        </ImageView>
+        <Button layoutX="-2.0" layoutY="203.0" mnemonicParsing="false" onAction="#vaiAGestioneAccount" prefHeight="60.0" prefWidth="286.0" style="-fx-background-color: #00768e; -fx-background-radius: 0;" text="Gestione account" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+        <Button layoutX="-4.0" layoutY="265.0" mnemonicParsing="false" onAction="#vaiAGestioneCarriera" prefHeight="60.0" prefWidth="286.0" style="-fx-background-radius: 0;" text="Gestione carriera" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+        <Button layoutX="-3.0" layoutY="335.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="286.0" style="-fx-background-radius: 0; -fx-background-color: #003f4b;" text="Registrazione da remoto" textFill="WHITE" underline="true">
+            <cursor>
+                <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+        <Label fx:id="emailImpiegato" layoutX="375.0" layoutY="39.0" text="email@email.com">
+            <font>
+                <Font size="15.0" />
+            </font></Label>
+        <Label fx:id="ruoloImpiegato" layoutX="375.0" layoutY="66.0" text="ruolo">
+            <font>
+                <Font name="System Italic" size="15.0" />
+            </font></Label>
+        <Button fx:id="gestionePersonaleBtn" layoutX="-4.0" layoutY="405.0" mnemonicParsing="false" onAction="#vaiAGestionePersonale" prefHeight="60.0" prefWidth="286.0" style="-fx-background-radius: 0;" text="Gestione del Personale" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+        <Button layoutX="427.0" layoutY="420.0" mnemonicParsing="false" onAction="#registraMotivazione" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 0; -fx-background-color: #00768e;" text="Registra" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+        <Text fill="WHITE" layoutX="8.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CarsParadise @ 2023">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="89.0" fitWidth="77.0" layoutX="299.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/user-regular-60.png" />
+            </image>
+        </ImageView>
+      <Label fx:id="labelOrario" layoutX="412.0" layoutY="179.0" text="Orario HH:MM">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Text layoutX="379.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Motivazione">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="textAreaMotivazione" layoutX="379.0" layoutY="280.0" prefHeight="115.0" prefWidth="245.0" />
+      <Text layoutX="443.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orario attuale">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Label fx:id="labelAmministratore" layoutX="375.0" layoutY="93.0" text="Amministratore">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

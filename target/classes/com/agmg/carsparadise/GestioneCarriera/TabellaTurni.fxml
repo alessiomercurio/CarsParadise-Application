@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: white;" stylesheets="@../stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.agmg.carsparadise.GestioneCarriera.Interface.TabellaTurni">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00768e" height="475.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="700.0" />
+        <TableView fx:id="tabellaTurni" fixedCellSize="20.0" layoutX="69.0" layoutY="163.0" prefHeight="399.0" prefWidth="563.0" style="-fx-border-color: #00768e; -fx-background-color: white;">
+            <columns>
+                <TableColumn fx:id="colData" editable="false" prefWidth="102.9305191040039" text="Data" />
+                <TableColumn fx:id="coloOraInizio" editable="false" prefWidth="106.9993896484375" text="Orario di inizio" />
+            <TableColumn fx:id="colOrarioFine" prefWidth="128.26068115234375" text="Orario di fine" />
+            <TableColumn fx:id="colServizio" prefWidth="112.73931884765625" text="Servizio" />
+            <TableColumn fx:id="colStraordinario" prefWidth="112.52197265625" text="Straordinario" />
+            </columns>
+        </TableView>
+        <Text fill="#00768e" layoutX="142.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visualizzazione turni">
+            <font>
+                <Font size="49.0" />
+            </font></Text>
+        <Hyperlink layoutX="45.0" layoutY="45.0" onAction="#tornaAGestioneCarriera">
+            <graphic>
+                <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/chevron-left-circle-solid-60%20(1).png" />
+                    </image>
+                </ImageView>
+            </graphic></Hyperlink>
+    </children>
+</AnchorPane>
