@@ -64,6 +64,8 @@ public class GestoreCarriera {
         }
 
         String dataInizioAstensione = dataInizio.getValue().format(DateTimeFormatter.ofPattern("YYYY-MM-DD"));
+        System.out.println(dataInizioAstensione);
+        System.out.println(dataInizio.getValue().toString());
         String dataFineAstensione = dataFine.getValue().format(DateTimeFormatter.ofPattern("YYYY-MM-DD"));
 
         try{
